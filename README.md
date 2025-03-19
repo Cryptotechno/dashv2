@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered Advertising Platform
+
+An MVP platform for advertising agencies that want to be AI-innovative. This platform helps clients manage campaigns and analyze competitors with automation and AI-powered insights.
+
+## Features
+
+### Campaign Status Tracker
+- Real-time updates on campaign progress
+- Visual tracking of campaign stages (brief sent → proposal received → campaign start → creative optimization → completion)
+- Searchable campaign database with client and platform filters
+
+### Performance Dashboard
+- Multi-channel analytics (Google, Facebook, TikTok, Telegram Ads)
+- AI-generated insights for performance improvements
+- Budget optimization recommendations
+- Visual charts and metrics for key performance indicators
+
+### Competitor Intelligence
+- Automated competitor analysis
+- Data integration with Google Transparency and Facebook Ad Library
+- Detailed competitor ad creative tracking
+- AI-driven strategic insights and benchmarking
+
+## Tech Stack
+
+- **Framework**: Next.js with App Router
+- **Styling**: Tailwind CSS
+- **Charts**: Chart.js, Recharts
+- **UI Components**: Headless UI
+- **Icons**: Heroicons
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/(dashboard)/*` - Dashboard pages
+  - `campaigns/` - Campaign Status Tracker
+  - `performance/` - Performance Dashboard
+  - `competitors/` - Competitor Intelligence
+- `src/components/*` - Reusable components
+  - `layout/` - Layout components (sidebar, header)
+  - `dashboard/` - Dashboard-specific components
+  - `campaigns/` - Campaign-specific components
+  - `competitors/` - Competitor-specific components
 
-## Learn More
+## Future Enhancements
 
-To learn more about Next.js, take a look at the following resources:
+The platform is designed with a scalable foundation that can be expanded with advanced AI features such as:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- AI-generated creative suggestions
+- Predictive budget allocation
+- Automated campaign optimization
+- Natural language querying for ad performance
+- Advanced competitor tracking with sentiment analysis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
